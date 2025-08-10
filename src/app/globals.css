@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* primary background */
+  --background-alt: #f8fafc; /* slate-50 */
+  --background-soft: #eff6ff; /* blue-50 */
+  --foreground: #111827; /* gray-900 */
+  --muted-foreground: #4b5563; /* gray-600 */
+  --rcp-primary: #1e3a8a; /* indigo-900 */
+  --rcp-primary-light: #1d4ed8; /* blue-700 */
+  --rcp-accent: #c2410c; /* orange-700 */
+  --rcp-gold: #d97706; /* amber-600 */
+  --rcp-success: #059669; /* emerald-600 */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
 }
 
 @theme inline {
@@ -12,15 +22,116 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Always light theme for this brand. If you want dark mode later,
+   add a data-theme="dark" switch and override vars accordingly. */
 
 body {
   background: var(--background);
+  color: var(--muted-foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+
+a, button { -webkit-tap-highlight-color: transparent; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background: #111827;
+  color: #fff;
+  border-radius: 0.375rem;
+  z-index: 1000;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(2, 6, 23, 0.06);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(2, 6, 23, 0.04);
+}
+
+.section-alt {
+  background: var(--background-soft);
+}
+
+.heading {
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtle {
+  color: var(--muted-foreground);
+}
+
+/* Modern accents */
+.gradient-primary {
+  background-image: linear-gradient(135deg, var(--rcp-primary), #1d4ed8);
+}
+
+.gradient-accent {
+  background-image: linear-gradient(135deg, var(--rcp-accent), var(--rcp-gold));
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  color: #1e3a8a;
+  background: #dbeafe;
+}
+
+.section-title {
+  color: var(--foreground);
+  font-weight: 600;
+  display: inline-block;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 56px;
+  border-radius: 9999px;
+  margin-top: 10px;
+  background-image: linear-gradient(135deg, var(--rcp-accent), var(--rcp-gold));
+}
+
+.card-hover:hover {
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Simple CSS scroll reveal utility */
+.fade-in { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+.fade-in.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

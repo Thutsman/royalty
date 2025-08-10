@@ -1,0 +1,8 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0A3D62"/>
+  <circle cx="120" cy="330" r="80" fill="#1E5A87"/>
+  <rect x="220" y="300" width="420" height="60" fill="#F59E0B"/>
+  <rect x="220" y="280" width="420" height="10" fill="#E5E7EB" opacity="0.4"/>
+  <text x="40" y="80" fill="#E5E7EB" font-size="28" font-family="Arial, Helvetica, sans-serif">Township Water Reticulation</text>
+</svg>
+
