@@ -10,7 +10,6 @@ import {
   Droplets,
   Layers,
   Ruler,
-  Road,
 } from "lucide-react";
 import type { ComponentType, SVGProps } from "react";
 import type { LucideIcon } from "lucide-react";
@@ -35,7 +34,7 @@ export default function Services() {
             Droplets: Droplets,
             Layers: Layers,
             Ruler: Ruler,
-            Road: Road,
+            Road: HardHat,
           };
           const Icon = ICONS[svc.icon] ?? HardHat;
           return (
