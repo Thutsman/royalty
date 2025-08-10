@@ -1,8 +1,8 @@
 export const siteConfig = {
-  companyName: "Royal Consulting and Projects",
+  companyName: "Royalty Consulting and Projects",
   tagline: "Engineering Excellence. Building Tomorrow.",
   description:
-    "Royal Consulting and Projects is a South African civil engineering company delivering high-quality, cost-effective infrastructure solutions across Gauteng and Mpumalanga.",
+    "Royalty Consulting and Projects is a South African civil engineering company delivering high-quality, cost-effective infrastructure solutions across Gauteng and Mpumalanga.",
   url: "https://www.mkhize.com",
   locale: "en_ZA",
   region: "ZA",

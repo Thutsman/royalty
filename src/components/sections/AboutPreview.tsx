@@ -8,7 +8,7 @@ export default function AboutPreview() {
         <div>
           <h2 className="section-title text-2xl md:text-3xl">About Us</h2>
           <p className="subtle mt-3 max-w-2xl">
-            Founded to elevate South African infrastructure development, Royal Consulting and Projects delivers high-quality, cost-effective civil engineering solutions with a focus on safety, reliability, and innovation.
+            Founded to elevate South African infrastructure development, Royalty Consulting and Projects delivers high-quality, cost-effective civil engineering solutions with a focus on safety, reliability, and innovation.
           </p>
           <div className="grid grid-cols-2 gap-3 mt-6 text-sm">
             <div className="card p-4"><span className="font-semibold text-[--rcp-primary]">Mission</span><p className="subtle mt-1">Exceed client expectations through excellence and value.</p></div>

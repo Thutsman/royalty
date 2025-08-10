@@ -10,7 +10,7 @@ export default function ServiceAreas() {
           <div className="card p-4">
             <iframe
               title="Google Map of Gauteng and Mpumalanga"
-              aria-label="Google Map showing Royal Consulting service locations in Gauteng and Mpumalanga"
+              aria-label="Google Map showing Royalty Consulting service locations in Gauteng and Mpumalanga"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-[360px] rounded-md border"

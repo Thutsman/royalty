@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container py-10 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         <div>
           <div className="text-lg font-semibold">
-            <span className="text-[--rcp-accent]">Royal</span> Consulting
+            <span className="text-[--rcp-accent]">Royalty</span> Consulting
           </div>
           <p className="subtle mt-2 text-sm max-w-md">
             {siteConfig.description}

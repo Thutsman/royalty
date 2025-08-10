@@ -65,7 +65,7 @@ export default function Hero() {
         <motion.div variants={item} className="mt-5 inline-flex items-center gap-3 rounded-xl bg-white/90 px-4 py-3 shadow-md ring-1 ring-black/5">
           <span className="text-sm text-gray-700">Free consultation • Response within 1 business day</span>
           <span className="hidden sm:inline-block h-6 w-px bg-gray-200" />
-          <a href="tel:+271234567890" className="text-sm font-semibold text-blue-700 hover:underline">Call +27 123 456 7890</a>
+          <a href="tel:+27696169207" className="text-sm font-semibold text-blue-700 hover:underline">Call +27 696169207</a>
         </motion.div>
         <motion.div variants={item} className="mt-6 inline-block rounded-full bg-white/90 shadow-lg ring-1 ring-black/5" aria-label="company statistics">
           <ul className="flex items-center divide-x divide-gray-200 text-sm text-gray-800 whitespace-nowrap">

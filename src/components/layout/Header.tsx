@@ -20,7 +20,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 border-b border-[color:rgba(2,6,23,0.06)] shadow-sm">
       <div className="container flex items-center justify-between h-16">
         <Link href="/" className="font-semibold tracking-tight text-[color:var(--foreground)]">
-          <span className="text-[--rcp-accent]">Royal</span> Consulting
+          <span className="text-[--rcp-accent]">Royalty</span> Consulting
         </Link>
         <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
           {navItems.map((item) => (
@@ -36,9 +36,12 @@ export default function Header() {
             <Phone size={16} className="text-[--rcp-primary]" />
             <a href="tel:+27696169207" className="text-sm">+27 696169207</a>
           </div>
-          <Button asChild size="sm" variant="accent">
-            <Link href="/contact">Get Quote</Link>
-          </Button>
+          <Link
+            href="/contact"
+            className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md font-semibold shadow-sm transition-all duration-300 inline-block"
+          >
+            Get Quote
+          </Link>
         </nav>
         <button
           className="md:hidden inline-flex items-center justify-center p-2 text-[color:var(--foreground)] transition-transform"
@@ -68,11 +71,13 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="mt-2" variant="accent">
-              <Link href="/contact" onClick={() => setOpen(false)}>
-                Get Quote
-              </Link>
-            </Button>
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md font-semibold shadow-sm transition-all duration-300 inline-block mt-2"
+            >
+              Get Quote
+            </Link>
           </div>
         </div>
       </div>
